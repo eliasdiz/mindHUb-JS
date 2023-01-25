@@ -1,0 +1,89 @@
+header {
+    height: 30vh;
+    border: 1px solid blue;
+    flex-direction: column;
+    align-items: center;
+}
+nav {
+    border: 1px solid;
+    height: 40%; 
+    width: 100%;
+    background-color: rgb(117, 114, 114);
+}
+nav a {
+    border: 1px solid ;
+    text-decoration:  none;
+    text-align: center;
+    color: black;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+    font-size: small;
+}
+nav img {
+    width: 15%;
+}
+nav div {
+    background-color: gray;
+}
+h1 {
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+.main-home {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.div-filter {
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.check-main {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.search-main {
+    height: 40%;
+    width: 30%;
+}
+.search-main img {
+    width: 2rem;
+}
+.div-cards {
+    width: 100%;
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card {
+    align-items: center;
+}
+.card img {
+    height: 10rem;
+    width: 90%;
+    margin-top: 0.5rem;
+}
+footer {
+    border: 1px solid;
+    height: 8vh;
+    background-color: rgb(212, 212, 212);
+}
+footer div {
+    height: 100%;
+    width: 25%;
+}
+footer img {
+    height: 2rem;
+}
+footer h3 {
+    width: 20%;
+}
