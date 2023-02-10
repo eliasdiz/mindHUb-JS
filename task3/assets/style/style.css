@@ -1,0 +1,160 @@
+header {
+    border: 1px solid;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav {
+    height: 7rem;
+    width: 100%;
+}
+nav a {
+    border: 1px solid;
+    margin-right: 2rem;
+    color: black;
+}
+nav img {
+    width: 10rem;
+    margin-left: 2rem;
+}
+
+h1 {
+    height: 60%;
+    display: flex;
+    align-items: center;
+} 
+.div-filter {
+    border: 1px solid;
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.div-checkbox {
+    height: auto;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+.form-check {
+    border: 1px solid rgba(151, 151, 151, 0.521);
+    border-radius: 5px;
+    width: 10rem;
+}
+.search-main {
+    width: 35%;
+}
+.search-main img {
+    width: 2rem;
+}
+.div-cards {
+    margin: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card {
+    align-items: center;
+}
+.card img {
+    height: 10rem;
+    width: 90%;
+    margin-top: 0.5rem;
+}
+footer {
+    border: 1px solid;
+    min-height: 9vh;
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div {
+    height: 100%;
+    width: 25%;
+}
+footer img {
+    height: 2rem;
+}
+footer h4 {
+    margin-right: 2rem;
+}
+.main-contact {
+    display: flex;
+    justify-content: center;
+}
+.form-contact {
+    margin: 3rem;
+    width: 40%;
+}
+.main-stats {
+    display: flex;
+    justify-content: center;
+}
+.table {
+    margin: 3rem;
+}
+.main-details {
+    display: flex;
+    justify-content: center;
+}
+.div-details {
+    border: 1px solid;
+    margin: 3rem;
+    width: 65%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.div-details img {
+    width: 25rem;
+}
+.div-details section {
+    border: 1px solid;
+    width: 35%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div-details h5 {
+    text-align: center;
+}
+#searchDontFound {
+    width: 30rem;
+}
+
+@media (min-width: 320px) and (max-width: 986px) {
+    nav img {
+        display: none;
+    }
+    nav a {
+        width: 100%;
+    }
+    .div-filter {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .check-main {
+        height: 70%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .search-main {
+        height: 30%;
+        width: 100%;
+    }
+    .form-contact {
+        margin: 3rem;
+        width: 80%;
+    }   
+    footer div {
+        height: 100%;
+        width: 45%;
+    }
+}
