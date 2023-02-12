@@ -25,6 +25,9 @@ h1 {
     display: flex;
     align-items: center;
 } 
+.main-index {
+    min-height: 51vh;
+}
 .div-filter {
     border: 1px solid;
     height: 8rem;
@@ -84,6 +87,12 @@ footer img {
 footer h4 {
     margin-right: 2rem;
 }
+.main-upcoming {
+    min-height: 51vh;
+}
+.main-past {
+    min-height: 51vh;
+}
 .main-contact {
     display: flex;
     justify-content: center;
@@ -93,13 +102,21 @@ footer h4 {
     width: 40%;
 }
 .main-stats {
+    min-height: 51vh;
     display: flex;
     justify-content: center;
 }
-.table {
-    margin: 3rem;
+.div-table{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+table caption{
+    text-align: center;
 }
 .main-details {
+    min-height: 51vh;
     display: flex;
     justify-content: center;
 }
@@ -128,6 +145,7 @@ footer h4 {
 #searchDontFound {
     width: 30rem;
 }
+
 
 @media (min-width: 320px) and (max-width: 986px) {
     nav img {
