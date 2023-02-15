@@ -1,43 +1,30 @@
 header {
-    height: 30vh;
-    border: 1px solid blue;
+    border: 1px solid;
+    height: 40vh;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 nav {
-    border: 1px solid;
-    height: 40%; 
+    height: 7rem;
     width: 100%;
-    background-color: rgb(117, 114, 114);
 }
 nav a {
-    border: 1px solid ;
-    text-decoration:  none;
-    text-align: center;
+    border: 1px solid;
+    margin-right: 2rem;
     color: black;
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(212, 212, 212);
-    font-size: small;
 }
 nav img {
-    width: 15%;
+    width: 10rem;
+    margin-left: 2rem;
 }
-nav div {
-    background-color: gray;
-}
+
 h1 {
     height: 60%;
     display: flex;
     align-items: center;
-}
-.main-home {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
+} 
 .div-filter {
     height: 7rem;
     width: 100%;
@@ -46,20 +33,18 @@ h1 {
 }
 .check-main {
     height: 30%;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    width: 65%;
 }
 .search-main {
     height: 40%;
-    width: 30%;
+    width: 35%;
 }
 .search-main img {
     width: 2rem;
 }
 .div-cards {
-    width: 100%;
-    gap: 1.5rem;
+    margin: 1rem;
+    gap: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -74,8 +59,11 @@ h1 {
 }
 footer {
     border: 1px solid;
-    height: 8vh;
+    height: 9vh;
     background-color: rgb(212, 212, 212);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 footer div {
     height: 100%;
@@ -84,6 +72,48 @@ footer div {
 footer img {
     height: 2rem;
 }
-footer h3 {
-    width: 20%;
+footer h4 {
+    margin-right: 2rem;
+}
+.main-contact {
+    display: flex;
+    justify-content: center;
+}
+.form-contact {
+    margin: 3rem;
+    width: 40%;
+}
+.main-stats {
+    display: flex;
+    justify-content: center;
+}
+.table {
+    margin: 3rem;
+}
+
+
+@media (min-width: 320px) and (max-width: 986px) {
+    nav img {
+        display: none;
+    }
+    nav a {
+        width: 100%;
+    }
+    .div-filter {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .check-main {
+        height: 70%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .search-main {
+        height: 30%;
+        width: 100%;
+    }
+    .form-contact {
+        margin: 3rem;
+        width: 80%;
+    }   
 }
