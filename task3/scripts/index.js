@@ -14,12 +14,13 @@ fetch(url)
   printCard(events,cardsContainer)
   checkboxContainer.addEventListener('change',(e) =>{  
     cardsContainer.innerHTML = ''
+    const text = search.value
     const cheked = document.querySelectorAll(`input[type="checkbox"]:checked`)
     const categories = getCategories(cheked)
-    const filtered = filterCheck(events,categories)
+    const filterSearchA = filterSearch(events,text)
+    const filtered = filterCheck(filterSearchA,categories)
     printCard(filtered,cardsContainer)
   })
-  
   search.addEventListener('keyup',(e) =>{
     cardsContainer.innerHTML = ''
     const text = search.value

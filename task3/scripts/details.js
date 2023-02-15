@@ -7,8 +7,8 @@ fetch(url)
 .then( data => {
     const events = data.events 
     const parameters = new URLSearchParams(location.search)
-    const id = parseInt( parameters.get('id'))
-    const event = events.find(event => event["_id"] === id)
+    const id = parameters.get('id')
+    const event = events.find(event => event["_id"] == id)
     const nameDeatils = event.name
     document.title = `Details ${nameDeatils}`
     printDetails(event,main)
